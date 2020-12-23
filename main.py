@@ -1,4 +1,4 @@
-import requests
+# import requests
 #import time
 #from functools import lru_cache
 # This is main file empty for now
@@ -41,5 +41,13 @@ import requests
 #     somework(3)
 #     print('called again')
 
-r = requests.get("https://newsapi.org/docs/client-libraries/python")
-print(r.text)
+# r = requests.get("https://newsapi.org/docs/client-libraries/python")
+# print(r.text)
+#
+# n = int(input('enter n'))
+# for i in range(n+1):
+#     print(i, end="\t")
+
+a = [6,4,'34']
+b = [6,4,'34']
+print(b == a )
