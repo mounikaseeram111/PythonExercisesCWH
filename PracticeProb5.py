@@ -20,13 +20,20 @@ def is_palindrome(n):
 
 
 if __name__ == '__main__':
-    size = int(input("Enter no of test cases u want to test"))
-    TestCasesList = []
+    size = int(input("Enter size of list"))
+    TestCasesList = []5
+    23
     for i in range(size):
         TestCasesList.append(int(input()))
     print(f"Input List {TestCasesList}")
 
-    for i in range(size):
+    #using string comprehension
+
+    print(f"Output list is {[TestCasesList[i] if TestCasesList[i]<10 else FindNextPalindromSimpleFun(TestCasesList[i]) for i in range(size)]}")
+
+    #usinf normal for loop
+    '''for i in range(size):
         TestCasesList[i] = FindNextPalindromSimpleFun(TestCasesList[i])
         #print(f'Next palindrome for {TestCasesList[i]} is {result}')
     print(f"Next Palindrome list {TestCasesList}")
+    '''
