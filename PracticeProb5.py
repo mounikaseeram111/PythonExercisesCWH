@@ -21,8 +21,7 @@ def is_palindrome(n):
 
 if __name__ == '__main__':
     size = int(input("Enter size of list"))
-    TestCasesList = []5
-    23
+    TestCasesList = []
     for i in range(size):
         TestCasesList.append(int(input()))
     print(f"Input List {TestCasesList}")
