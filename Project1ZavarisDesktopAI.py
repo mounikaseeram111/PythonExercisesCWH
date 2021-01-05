@@ -45,11 +45,11 @@ def takeCommand():
     return query
 
 def sendEmail(content,to):
-    server = smtp.SHTP('smtp.gmail.com',587)
+    server = smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('you-email','your-password')
-    server.sendmail('your-email',to,content)
+    server.login('XXXX@gmail.com','XXXX')
+    server.sendmail('XXXX@gmail.com',to,content)
     server.close()
 
 
@@ -92,11 +92,11 @@ if __name__ == "__main__":
             try:
                 speak('What should I say?')
                 content = takeCommand()
-                to = 'mounikaseeram111@gmail.com'
+                to = 'XXXXX@gmail.com'
                 sendEmail(content,to)
                 speak('Email has been sent Successfully!')
             except Exception as e:
                 print(e)
-                speak('Sorry my dear firend! I am unable to send your email')
+                speak('Sorry my dear friend! I am unable to send your email')
         elif 'quit':
             exit()
